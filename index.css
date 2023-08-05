@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:#333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.music-player-container{
+    width: 320px;
+    background-color: #ffe0e5;
+    padding: 25px 35px;
+    text-align: center;
+}
