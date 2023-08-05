@@ -18,11 +18,18 @@ playPause.addEventListener('click', function(){
         song.play()
         ctrlIcon.classList.remove('fa-play')
         ctrlIcon.classList.add('fa-pause')
+          if (song.play()) {
+        setInterval(() => {
+            progress.value = song.currentTime
+        }, 500)
     }
+    }
+  
 })
 
-if (song.play()) {
-    setInterval(() => {
-        progress.value = song.currentTime
-    }, 500)
+progress.onchange = function () {
+    song.play()
+    song.currentTime =  progress.value 
+    ctrlIcon.classList.remove('fa-play')
+    ctrlIcon.classList.add('fa-pause')
 }
