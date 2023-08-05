@@ -3,11 +3,11 @@ const progress = document.getElementById('progress')
 const ctrlIcon = document.getElementById('ctrlIcon')
 const playPause = document.getElementById('playPause')
 
-// console.log(song);
-// song.onloadedmetadata = function () {
-//     progress.max = song.duration
-//     progress.value = song.currentTime
-// }
+
+song.onloadedmetadata = function () {
+    progress.max = song.duration
+    progress.value = song.currentTime
+}
 
 playPause.addEventListener('click', function(){
     if (ctrlIcon.classList.contains('fa-pause')) {
@@ -34,8 +34,3 @@ progress.onchange = function () {
     ctrlIcon.classList.add('fa-pause')
 }
 
-const url = 'https://api.discogs.com/artists/1'
-
-fetch(url)
-.then(res => res.json())
-.then(data => console.log(data))
