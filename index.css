@@ -19,3 +19,20 @@
     padding: 25px 35px;
     text-align: center;
 }
+.music-player-container nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    /* text-align: center; */
+    line-height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.7);
+}
